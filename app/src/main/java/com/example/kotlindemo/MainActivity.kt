@@ -3,6 +3,7 @@ package com.example.kotlindemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.kotlindemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnSubmit.setOnClickListener {
             var str = binding.etName.text.toString();
             Log.d("Bhumi", "Hello Bhumi! $str");
+            Toast.makeText(this, "Good Afternoon", Toast.LENGTH_SHORT).show()
         }
 
 
